@@ -1,5 +1,6 @@
 package com.example.backend.models;
 
+import com.example.backend.enums.LessonType;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -31,11 +32,12 @@ public class Lesson {
     @Column(name = "description", columnDefinition = "TEXT")
     private String description;
 
-    @Column(name = "is_text")
-    private boolean isText;
-
     @Column(name = "is_public")
     private boolean isPublic;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "lesson_type")
+    private LessonType lessonType;
 
     @ManyToOne
     @JoinColumn(name = "module_id")

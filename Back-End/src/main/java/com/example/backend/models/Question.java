@@ -23,6 +23,6 @@ public class Question {
     private Long position;
 
     @ManyToOne
-    @JoinColumn(name = "quizz_id")
-    private Quizz quizz;
+    @JoinColumn(name = "lesson_id")
+    private Lesson lesson;
 }
