@@ -31,6 +31,9 @@ public class Course {
     @Column(name = "is_free")
     private boolean isFree;
 
+    @Column(name = "active")
+    private boolean active;
+
     @ManyToOne
     @JoinColumn(name = "category_id")
     private Category category;

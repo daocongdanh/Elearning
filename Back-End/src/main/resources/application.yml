@@ -17,5 +17,23 @@ spring:
         format_sql: true
     show-sql: true
 
+  # File
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 100MB
+
 api:
   prefix: /api/v1
+
+# cloudinary
+cloudinary:
+  cloudName: dmzs6zp1a
+  apiKey: 729153783369922
+  apiSecret: q6SH8w-V1LtX7XDk-uJ59WeBXA0
+
+# Upload video
+upload:
+  video-src: src/main/resources/static
+  video-target: target/classes/static
