@@ -17,7 +17,6 @@ public class LessonDTO {
     @NotBlank(message = "Title cannot be empty")
     private String title;
 
-    @NotBlank(message = "Content cannot be empty")
     private String content;
 
     @NotNull(message = "Position cannot be empty")
@@ -32,7 +31,7 @@ public class LessonDTO {
     private String lessonType;
 
     @NotNull(message = "Module ID cannot be empty")
-        private Long moduleId;
+    private Long moduleId;
 
     private MultipartFile file;
 }
