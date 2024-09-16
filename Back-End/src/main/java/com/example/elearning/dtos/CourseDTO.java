@@ -31,4 +31,6 @@ public class CourseDTO {
 
     @NotNull(message = "Category ID cannot be empty")
     private Long categoryId;
+
+    private Long tagId;
 }

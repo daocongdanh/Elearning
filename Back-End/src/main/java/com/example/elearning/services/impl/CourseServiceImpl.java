@@ -4,11 +4,13 @@ import com.example.elearning.dtos.CourseDTO;
 import com.example.elearning.exceptions.ResourceNotFoundException;
 import com.example.elearning.models.Category;
 import com.example.elearning.models.Course;
+import com.example.elearning.models.Tag;
 import com.example.elearning.models.User;
 import com.example.elearning.repositories.CourseRepository;
 import com.example.elearning.responses.CourseResponse;
 import com.example.elearning.services.CategoryService;
 import com.example.elearning.services.CourseService;
+import com.example.elearning.services.TagService;
 import com.example.elearning.services.UserService;
 import com.example.elearning.utils.FileUtil;
 import lombok.RequiredArgsConstructor;
@@ -25,6 +27,7 @@ public class CourseServiceImpl implements CourseService {
     private final FileUtil fileUtil;
     private final UserService userService;
     private final CategoryService categoryService;
+    private final TagService tagService;
 
     @Override
     @Transactional
@@ -40,6 +43,12 @@ public class CourseServiceImpl implements CourseService {
                 .user(user)
                 .category(category)
                 .build();
+        if(courseDTO.getTagId() != null){
+            Tag tag = tagService.getTagById(courseDTO.getTagId());
+            course.setTag(tag);
+        }
+        else course.setTag(null);
+
         String image = fileUtil.uploadImage(courseDTO.getImage());
         if(StringUtils.hasLength(image)){
             course.setImage(image);
@@ -60,6 +69,12 @@ public class CourseServiceImpl implements CourseService {
         course.setFree(courseDTO.isFree());
         course.setUser(user);
         course.setCategory(category);
+
+        if(courseDTO.getTagId() != null){
+            Tag tag = tagService.getTagById(courseDTO.getTagId());
+            course.setTag(tag);
+        }
+        else course.setTag(null);
         String image = fileUtil.uploadImage(courseDTO.getImage());
         if(StringUtils.hasLength(image)){
             course.setImage(image);

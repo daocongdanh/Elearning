@@ -1,6 +1,7 @@
 package com.example.elearning.responses;
 
 import com.example.elearning.models.Course;
+import com.example.elearning.models.Tag;
 import lombok.*;
 
 @Getter
@@ -18,6 +19,7 @@ public class CourseResponse {
     private boolean active;
     private Long userId;
     private Long categoryId;
+    private Tag tag;
 
     public static CourseResponse fromCourse(Course course){
         return CourseResponse.builder()
@@ -30,6 +32,7 @@ public class CourseResponse {
                 .active(course.isActive())
                 .userId(course.getUser().getId())
                 .categoryId(course.getCategory().getId())
+                .tag(course.getTag() != null ? course.getTag() : null)
                 .build();
     }
 }

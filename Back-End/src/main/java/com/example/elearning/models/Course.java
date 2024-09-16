@@ -39,6 +39,10 @@ public class Course {
     private Category category;
 
     @ManyToOne
+    @JoinColumn(name = "tag_id")
+    private Tag tag;
+
+    @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
 
