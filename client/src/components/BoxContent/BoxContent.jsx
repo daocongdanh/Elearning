@@ -17,7 +17,7 @@ export const BoxContent = ({fontText,h1,p,center,textBn,bgBn,colorTextBn,sizeH1,
     };
   }, []);
   return (
-    <div ref={boxRef} className={`bg-white ${li? 'p-0': width ? 'p-6' : 'p-4'} flex-col ${center?"text-center":""} justify-between max-w-[440px] ${fontText?fontText:""} tablet:max-w-none`}>
+    <div ref={boxRef} className={`bg-white ${li? 'p-0': width ? 'p-6' : 'p-4'} flex-col ${center?"text-center":""} justify-between max-w-[440px] ${fontText?fontText:""} shadow-lg tablet:max-w-none`}>
         {img && <div className='flex tablet:justify-center'><img src={img} className='max-w-48' alt="" /></div>}
         {h1 && <h1 className={` ${width ? 'font-times' : 'font-sans'} mb-2 ${sizeH1?`text-[${sizeH1}px]`:""} tablet:text-center`}>{h1}</h1>}
         <ul>

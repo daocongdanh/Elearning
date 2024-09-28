@@ -21,7 +21,7 @@ export const SubMenu1 = ({isOpen1,swapSubmenu,isClickSwap,categories}) => {
                     <Link className='text-eighth'>{t("Đăng ký")}</Link>
                 </li>     
             </ul>
-            <h2 className='p-4 pb-0 border-t border-[#d1d7dc] text-third font-bold text-sm'>Phổ biến nhất</h2>
+            <h2 className='p-4 pb-0 border-t border-[#d1d7dc] text-third font-bold text-sm'>{t("Phổ biến nhất")}</h2>
             <ul className='py-2'>
                 {filterCategories.length>0&&filterCategories?.map((data,index)=>{
                     return(

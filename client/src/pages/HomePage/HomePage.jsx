@@ -58,8 +58,8 @@ const HomePage = () => {
           <h1>{t("Tuyển tập khóa học rộng lớn")}</h1>
           <p className='text-[19px] mt-4'>{t("Lựa chọn trong số hơn 250000 khóa học video online với nhiều nội dung bổ sung mới được xuất bản hàng tháng")}</p>
         </div>
-        <div>
-          <div className='flex gap-4 text-third text-base font-bold'>
+        <div className=' px-6'>
+          <div className='flex flex-wrap mx-auto max-w-[1292px] gap-4 text-third text-base font-bold'>
             {listTagCourses?.length>0 && listTagCourses?.map((data,index)=>{
               return(
               <div key={`coursePopular-${index}`}>

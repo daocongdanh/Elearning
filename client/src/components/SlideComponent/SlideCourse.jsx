@@ -10,7 +10,7 @@ export const SlideCourse = ({slideShow,listCourses}) => {
         speed: 500,
         slidesToShow: slideShow?slideShow:1,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 5000,
         prevArrow: <CustomPrevArrow top={"16"} record={"6"}/>,
         nextArrow: <CustomNextArrow top={"16"} record={"6"}/>,
@@ -35,10 +35,10 @@ export const SlideCourse = ({slideShow,listCourses}) => {
         ]
     };
   return (
-    <Slider {...settings} className='z-0'>
+    <Slider {...settings}>
         {listCourses.length>0 && listCourses?.map((data,index)=>{
             return(
-                <Link className='' key={`listCoursePopular-${index}`}>
+                <Link to="/course" key={`listCoursePopular-${index}`}>
                     <CardCourse listCourses={data}/>      
                 </Link>
             )

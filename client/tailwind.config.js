@@ -1,5 +1,6 @@
   /** @type {import('tailwindcss').Config} */
   const flowbite = require("flowbite-react/tailwind");
+  
   module.exports = {
     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}",
       "./node_modules/flowbite/**/*.js",
@@ -60,6 +61,7 @@
           sixth:"#1e6055",
           seventh:"#562ac5",
           eighth: "#5022c3",
+          nineth: "#F69C08",
         },
         backgroundColor:{
           first: "#2d2f31",
@@ -67,7 +69,9 @@
           third: "#f7f9fa",
           fourth: "#5022c3",
           fifth: "#eceb98",
-          sixth: "#3b198f"
+          sixth: "#3b198f",
+          seventh: "#8710d8",
+          eighth:"#a435f0",
         },
         backgroundImage:{
           

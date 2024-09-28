@@ -67,6 +67,14 @@ const resources = {
       "Trở thành giảng viên": "Become an instructor",
       "Giảng viên trên khắp thế giới giảng dạy hàng triệu học viên trên Udemy. Chúng tôi cung cấp công cụ và kỹ năng để dạy những gì bạn yêu thích.": "Instructors from around the world teach millions of learners on Udemy. We provide the tools and skills to teach what you love.",
       "Bắt đầu dạy học ngày hôm nay": "Start teaching today",
+      "Đăng nhập vào tài khoản Udemy của bạn":"Log in to your Udemy account",
+      "Mật khẩu": "Mật khẩu",
+      "Quên mật khẩu": "Forgot Password",
+      "Hoặc": "or",
+      "Các tùy chọn đăng nhập khác": "Other log in options",
+      "Đăng nhập vào tài khoản khác": "Đăng nhập vào tài khoản khác",
+      "Bạn không có tài khoản?": "Don't have an account?",
+      "Đăng nhập bằng tên tổ chức của bạn": "Log in with your organization",
     }
   },
   vi: {
@@ -133,7 +141,14 @@ const resources = {
       "Trở thành giảng viên": "Trở thành giảng viên",
       "Giảng viên trên khắp thế giới giảng dạy hàng triệu học viên trên Udemy. Chúng tôi cung cấp công cụ và kỹ năng để dạy những gì bạn yêu thích.": "Giảng viên trên khắp thế giới giảng dạy hàng triệu học viên trên Udemy. Chúng tôi cung cấp công cụ và kỹ năng để dạy những gì bạn yêu thích.",
       "Bắt đầu dạy học ngày hôm nay": "Bắt đầu dạy học ngày hôm nay",
-
+      "Đăng nhập vào tài khoản Udemy của bạn":"Đăng nhập vào tài khoản Udemy của bạn",
+      "Mật khẩu": "Mật khẩu",
+      "Quên mật khẩu": "Quên mật khẩu",
+      "Hoặc": "Hoặc",
+      "Các tùy chọn đăng nhập khác": "Các tùy chọn đăng nhập khác",
+      "Đăng nhập vào tài khoản khác": "Đăng nhập vào tài khoản khác",
+      "Bạn không có tài khoản?": "Bạn không có tài khoản?",
+      "Đăng nhập bằng tên tổ chức của bạn": "Đăng nhập bằng tên tổ chức của bạn",
     }
   }
 };

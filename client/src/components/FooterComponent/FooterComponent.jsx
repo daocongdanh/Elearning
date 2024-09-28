@@ -14,7 +14,7 @@ const FooterComponent = ({setIsOpenModel}) => {
   return (
     <div className='bg-first text-white pt-6 px-12'>
       <div className='flex justify-between tabletXs:flex-col-reverse'>
-        <div className='grid grid-cols-3 w-[768px] tabletXs:block'>
+        <div className='grid grid-cols-3 w-[768px] tabletXs:block tabletXs:w-full'>
           <ul>
             <li className='py-1'><Link to="/" className='hover:underline'>{t('Udemy Business')}</Link></li>
             <li className='py-1'><Link to="/" className='hover:underline'>{t('Giảng dạy trên Udemy')}</Link></li>

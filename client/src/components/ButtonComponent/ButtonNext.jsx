@@ -2,7 +2,7 @@ export const CustomNextArrow = (props) => {
     const { onClick,top,record } = props;
     return (
       <div
-        className={`absolute ${record?`-right-${record}`:"-right-2"} ${top?`top-${top}`:"top-1/2"} transform -translate-y-1/2 bg-gray-800 text-white p-4 border border-third hover:bg-[#3e4143] rounded-full cursor-pointer`}
+        className={`absolute ${record?`-right-${record}`:"right-2"} ${top?`top-${top}`:"top-1/2"} transform -translate-y-1/2 bg-gray-800 text-white p-4 border border-third hover:bg-[#3e4143] rounded-full cursor-pointer`}
         onClick={onClick}
       >
         <svg fill="#ffffff" height="14px" width="14px" version="1.1" viewBox="0 0 24 24" stroke="#ffffff">
